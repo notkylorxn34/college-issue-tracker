@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>College Issue Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="main-box">
+
+    <h1>College Issue Tracker</h1>
+    <p class="sub-text">Report and track campus problems</p>
+
+    <div class="form-card">
+      <h2>Raise an Issue</h2>
+
+      <form id="issueForm">
+
+        <label>Issue Title</label>
+        <input type="text" id="titleInput" placeholder="Enter issue title" />
+
+        <label>Description</label>
+        <textarea id="descInput" placeholder="Describe the issue"></textarea>
+
+        <label>Category</label>
+        <select id="categoryInput">
+          <option value="">Select</option>
+          <option>Hostel</option>
+          <option>Academics</option>
+          <option>Transport</option>
+          <option>Facilities</option>
+        </select>
+
+        <button type="submit">Submit Issue</button>
+
+      </form>
+    </div>
+
+    <div class="list-card">
+      <h2>Reported Issues</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="issueTable">
+        </tbody>
+      </table>
+
+      <p id="emptyText">No issues reported yet.</p>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
